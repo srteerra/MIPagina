@@ -1,195 +1,249 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
-<head>
+  <head>
     <!-- Este diseño está basado en un diseño web libre llamado CrystalX y que se puede descargar desde
          la dirección http://www.oswd.org/design/preview/id/3465 -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="content-language" content="es" />
 
-    <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
-    
+    <meta
+      name="copyright"
+      content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz"
+    />
+
     <title>Mi sitio web</title>
     <meta name="description" content="Mi sitio web" />
     <meta name="keywords" content="sitio, web" />
-    
+
     <link rel="index" href="../Resposivo" title="Inicio" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/principal.css" />
-</head>
+    <link
+      rel="stylesheet"
+      media="screen,projection"
+      type="text/css"
+      href="css/principal.css"
+    />
 
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<!-- Contenedor -->
-<div id="contenedor">
-
-    <!-- Cabecera -->
-    <div id="cabecera">
-
-        <!-- Logo -->
-        <h1 id="logo"><a href="../Resposivo" title="Mi sitio web">Mi sitio web</a></h1>
-
-        <!-- Buscador -->
-        <div id="buscador">
-            <form action="" method="get">
-                <fieldset>
-                	<legend>Buscador</legend>
-                    <input type="text" name="busqueda" size="30" />
-                    <input type="submit" name="botonbuscar" value="Buscar" />
-                </fieldset>
-            </form>
-        </div> <!-- /buscador -->
-
-		<div class="clear"></div>
-    </div> 
-   
-     <div id="menu">
-            <ul>
-           <li><a href="#">Inicio</a></li>
-                <li class="seleccionado"><a href="#">Blog</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Enlaces</a></li>
+  <body class="grid__content">
+    <header id="cabecera">
+      <nav class="navbar navbar-expand-lg" id="menu">
+        <div class="container">
+          <a class="navbar-brand" href="#" id="logo">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Links</a>
+              </li>
             </ul>
+            <form action="" class="d-flex buscador" role="search" method="get">
+              <input
+                name="busqueda"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <div class="clear"></div>
-     </div> 
-     <div id="contenido">
+    <!-- Contenedor -->
+    <div class="container">
+      <div id="contenido">
+        <!-- Principal -->
+        <div id="principal">
+          <!-- Articulo -->
+          <div class="articulo">
+            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+            <p class="info">
+              <span class="fecha">dd-mm-aaaa 00:00</span>
+              <span class="categoria"><a href="#">diseño</a></span>
+              <span class="autor"><a href="#">Nombre Apellido</a></span>
+              <span class="comentarios"><a href="#">Añadir comentario</a></span>
+            </p>
 
-		<!-- Principal -->
-		<div id="principal">
+            <img src="imagenes/post.jpg" />
 
-            <!-- Articulo -->
-            <div class="articulo">
-                <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                <p class="info">
-                    <span class="fecha">dd-mm-aaaa 00:00</span>
-                    <span class="categoria"><a href="#">diseño</a></span>
-                    <span class="autor"><a href="#">Nombre Apellido</a></span>
-                    <span class="comentarios"><a href="#">Añadir comentario</a></span>
-                </p>
-                
-                <img src="imagenes/post.jpg">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
+              pellentesque enim blandit enim bibendum blandit. Integer eu leo ac
+              est aliquet imperdiet. Quisque nec justo id augue posuere
+              malesuada. Nullam ac metus. Cras non leo ut est placerat
+              condimentum.
+            </p>
 
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam pellentesque enim blandit enim bibendum blandit.
-                Integer eu leo ac est aliquet imperdiet. Quisque nec justo id augue posuere malesuada. Nullam ac metus. Cras non leo
-                ut est placerat condimentum.</p>
+            <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
+          </div>
+          <!-- /articulo -->
 
-                <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
-            </div> <!-- /articulo -->
+          <div class="clear"></div>
 
-            <div class="clear"></div>
-            
-            <!-- Articulo -->
-            <div class="articulo">
-                <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                <p class="info">
-                    <span class="fecha">dd-mm-aaaa 00:00</span>
-                    <span class="categoria"><a href="#">diseño</a></span>
-                    <span class="autor"><a href="#">Nombre Apellido</a></span>
-                    <span class="comentarios"><a href="#">Añadir comentario</a></span>
-                </p>
-                
-                <img src="imagenes/post.jpg">
+          <!-- Articulo -->
+          <div class="articulo">
+            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+            <p class="info">
+              <span class="fecha">dd-mm-aaaa 00:00</span>
+              <span class="categoria"><a href="#">diseño</a></span>
+              <span class="autor"><a href="#">Nombre Apellido</a></span>
+              <span class="comentarios"><a href="#">Añadir comentario</a></span>
+            </p>
 
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam pellentesque enim blandit enim bibendum blandit.
-                Integer eu leo ac est aliquet imperdiet. Quisque nec justo id augue posuere malesuada. Nullam ac metus. Cras non leo
-                ut est placerat condimentum.</p>
+            <img src="imagenes/post.jpg" />
 
-                <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
-            </div> <!-- /articulo -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
+              pellentesque enim blandit enim bibendum blandit. Integer eu leo ac
+              est aliquet imperdiet. Quisque nec justo id augue posuere
+              malesuada. Nullam ac metus. Cras non leo ut est placerat
+              condimentum.
+            </p>
 
-            <div class="clear"></div>
-            
-            <!-- Articulo -->
-            <div class="articulo">
-                <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                <p class="info">
-                    <span class="fecha">dd-mm-aaaa 00:00</span>
-                    <span class="categoria"><a href="#">diseño</a></span>
-                    <span class="autor"><a href="#">Nombre Apellido</a></span>
-                    <span class="comentarios"><a href="#">Añadir comentario</a></span>
-                </p>
-                
-                <img src="imagenes/post.jpg">
+            <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
+          </div>
+          <!-- /articulo -->
 
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam pellentesque enim blandit enim bibendum blandit.
-                Integer eu leo ac est aliquet imperdiet. Quisque nec justo id augue posuere malesuada. Nullam ac metus. Cras non leo
-                ut est placerat condimentum.</p>
+          <div class="clear"></div>
 
-                <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
-            </div> <!-- /articulo -->
+          <!-- Articulo -->
+          <div class="articulo">
+            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+            <p class="info">
+              <span class="fecha">dd-mm-aaaa 00:00</span>
+              <span class="categoria"><a href="#">diseño</a></span>
+              <span class="autor"><a href="#">Nombre Apellido</a></span>
+              <span class="comentarios"><a href="#">Añadir comentario</a></span>
+            </p>
 
-            <div class="clear"></div>
+            <img src="imagenes/post.jpg" />
 
-        </div><!-- /principal -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
+              pellentesque enim blandit enim bibendum blandit. Integer eu leo ac
+              est aliquet imperdiet. Quisque nec justo id augue posuere
+              malesuada. Nullam ac metus. Cras non leo ut est placerat
+              condimentum.
+            </p>
+
+            <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
+          </div>
+          <!-- /articulo -->
+
+          <div class="clear"></div>
+        </div>
+        <!-- /principal -->
 
         <!-- Secundario -->
         <div id="secundario">
+          <!-- Sobre mi -->
+          <h3><a href="#">Sobre mí</a></h3>
 
-                <!-- Sobre mi -->
-                <h3><a href="#">Sobre mí</a></h3>
+          <div id="sobremi">
+            <img src="imagenes/mifoto.gif" alt="Mi foto" />
+            <p>
+              <strong>Nombre apellidos</strong><br />
+              Edad<br />
+              Ciudad de residencia<br />
+              <a href="#">Mi perfil público</a>
+            </p>
+          </div>
+          <!-- /sobre mi -->
 
-                <div id="sobremi">
-                    <img src="imagenes/mifoto.gif" alt="Mi foto" />
-                    <p><strong>Nombre apellidos</strong><br />
-                    Edad<br />
-                    Ciudad de residencia<br />
-                    <a href="#">Mi perfil público</a></p>
-                </div> <!-- /sobre mi -->
+          <div class="clear"></div>
 
-                <div class="clear"></div>
+          <!-- Categorías -->
+          <h3>Categorías</h3>
 
-                <!-- Categorías -->
-                <h3>Categorías</h3>
+          <ul id="categorias">
+            <li class="seleccionado"><a href="#">Categoría 1</a></li>
+            <li><a href="#">Categoría 2</a></li>
+            <li><a href="#">Categoría 3</a></li>
+            <li><a href="#">Categoría 4</a></li>
+            <li><a href="#">Categoría 5</a></li>
+          </ul>
 
-                <ul id="categorias">
-                    <li class="seleccionado"><a href="#">Categoría 1</a></li>
-                    <li><a href="#">Categoría 2</a></li>
-                    <li><a href="#">Categoría 3</a></li>
-                    <li><a href="#">Categoría 4</a></li>
-                    <li><a href="#">Categoría 5</a></li>
-                </ul>
+          <div class="clear"></div>
 
-                <div class="clear"></div>
+          <!-- Archivo -->
+          <h3>Archivo</h3>
 
-                <!-- Archivo -->
-                <h3>Archivo</h3>
+          <ul id="archivo">
+            <li class="seleccionado"><a href="#">Enero 200X</a></li>
+            <li><a href="#">Diciembre 200X</a></li>
+            <li><a href="#">Noviembre 200X</a></li>
+            <li><a href="#">Octubre 200X</a></li>
+            <li><a href="#">Septiembre 200X</a></li>
+          </ul>
 
-                <ul id="archivo">
-                    <li class="seleccionado"><a href="#">Enero 200X</a></li>
-                    <li><a href="#">Diciembre 200X</a></li>
-                    <li><a href="#">Noviembre 200X</a></li>
-                    <li><a href="#">Octubre 200X</a></li>
-                    <li><a href="#">Septiembre 200X</a></li>
-                </ul>
+          <div class="clear"></div>
 
-                <div class="clear"></div>
+          <!-- Enlaces -->
+          <h3>Enlaces</h3>
 
-                <!-- Enlaces -->
-                <h3>Enlaces</h3>
+          <ul id="enlaces">
+            <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">Enlace 2</a></li>
+            <li><a href="#">Enlace 3</a></li>
+            <li><a href="#">Enlace 4</a></li>
+            <li><a href="#">Enlace 5</a></li>
+          </ul>
 
-                <ul id="enlaces">
-                    <li><a href="#">Enlace 1</a></li>
-                    <li><a href="#">Enlace 2</a></li>
-                    <li><a href="#">Enlace 3</a></li>
-                    <li><a href="#">Enlace 4</a></li>
-                    <li><a href="#">Enlace 5</a></li>
-                </ul>
+          <div class="clear"></div>
+        </div>
+        <!-- /secundario -->
 
-                <div class="clear"></div>
+        <div class="clear"></div>
+      </div>
+      <!-- /contenido -->
 
-        </div> <!-- /secundario -->
-
-	<div class="clear"></div>
-    </div> <!-- /contenido -->
-
-    <!-- Pie de página -->
-    <div id="pie">
+      <!-- Pie de página -->
+      <div id="pie">
         <p id="copyright">&copy; Hector Ricarte</p>
-    </div> <!-- /pie de página -->
-
-</div> <!-- /contenedor -->
-
-</body>
+      </div>
+      <!-- /pie de página -->
+    </div>
+    <!-- /contenedor -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

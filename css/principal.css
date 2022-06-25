@@ -1,4 +1,4 @@
-/* ---- Estilos básicos ---------------------------------------------------- */
+/* ---- Estilos bï¿½sicos ---------------------------------------------------- */
 
 body {
   margin: 0;
@@ -18,10 +18,7 @@ a:hover {
 p {
   margin: 1em 0;
   padding: 0;
-}
-
-.clear {
-  clear: both;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5 {
@@ -51,32 +48,29 @@ ul, ol {
   padding:0;
 }
 
-/* ---- Layout ------------------------------------------------------------- */
-
-#contenedor {
-  width:770px;
-  margin: 50px auto 0 auto;
+.active {
+  font-weight: 900;
 }
 
+/* ---- Layout ------------------------------------------------------------- */
+
 #cabecera {
-  width: 770px;
-  position: relative;
+  width: 100%;
   height: 100px;
   margin: 0;
   padding: 0;
-  background: #233C9B url("../imagenes/cabecera.jpg") no-repeat;
+  background-color: #262626;
   color: #FFF;
 }
 
 #contenido {
-  width: 760px;
-  margin: 0 5px;
+  width: 100%;
   background: #FFF;
 }
 
 #contenido #principal {
   float: left;
-  width: 530px;
+  width: 100%;
   margin-top: 15px;
   padding:0 0 0 20px;
   background: #FFF;
@@ -84,7 +78,7 @@ ul, ol {
 
 #contenido #secundario {
   float: left;
-  width: 200px;
+  width: 100%;
   margin: 15px 0 0 0;
   padding: 0;
   background: #CEDBF9 url("../imagenes/fondo_columna.gif") no-repeat;
@@ -101,75 +95,28 @@ ul, ol {
 
 /* ---- Cabecera ----------------------------------------------------------- */
 #cabecera #logo {
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  margin: 0;
+  color: white;
 }
 
-#cabecera #logo a {
-  color: #FFF;
-  display: block;
-  line-height: 35px;
-}
-
-#cabecera #logo a:hover {
-  color: #B5C4E3;
-  text-decoration: underline;
-}
-
-#cabecera #buscador {
-  position: absolute;
-  top: 40px;
-  right: 20px;
-}
-
-#cabecera #buscador legend {
-  display: none;
-}
-
-#cabecera #buscador fieldset {
+#cabecera .buscador input {
+  padding: 3px 25px;
   border: none;
+  border-radius: 20px;
 }
 
-/* ---- Menú --------------------------------------------------------------- */
+/* ---- Menï¿½ --------------------------------------------------------------- */
 #menu {
-  background: #192666;
-  margin: 0 5px;
-  padding: 10px 0 0 0;
-}
-
-#menu ul {
-  margin: 0 10px;
-  padding: 0;
-  list-style:none;
-}
-
-#menu ul li {
-  margin: 0 5px 0 0;
-  padding: 0;
-  float:left;
+  height: 100%;
+  background-color: #262626;
 }
 
 #menu ul li a {
-  display: block;
-  position: relative;
-  padding: 5px 15px;
-  border: 0;
-  background: #253575;
-  color: #B5C4E3;
-  font-weight: bold;
-  text-decoration: none;
+  color: #ffffff;
   cursor: pointer;
 }
 
-#menu ul li a:hover {
-  background: #31479B;
-}
-
-#menu ul li.seleccionado a {
-  background: #FFF;
-  color: #FF9000;
+#menu ul li a:not(:first-of-type) {
+  padding: 20px;
 }
 
 /* ---- Contenidos --------------------------------------------------------- */
@@ -181,7 +128,7 @@ ul, ol {
 }
 
 #contenido .articulo img {
-  width: 490px;
+  width: 2em;
 }
 
 #contenido .articulo h2 {
