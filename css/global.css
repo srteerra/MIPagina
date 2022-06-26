@@ -1,2 +1,41 @@
 @import "principal.css";
-@import "breakpoints.css"
+@import "breakpoints.css";
+
+/* ---- Estilos b�sicos ---------------------------------------------------- */
+
+/* We know that is wrong adding !important on styles, but because of Bootstrap integration we're forced to overwrite some style for better views */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: #bfae9f !important;
+  transition: ease 0.3s !important;
+}
+
+a:hover {
+  color: rgb(158, 110, 47) !important;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+	font-size: 5vw;
+  font-weight: 700 !important;
+}
+
