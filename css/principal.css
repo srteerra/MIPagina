@@ -62,16 +62,23 @@ ul, ol {
 
 #contenido {
   width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: .4fr 1fr;
   background: #FFF;
 }
 
 #contenido #principal {
   width: 100%;
+  grid-row: 1;
+  grid-column: 2;
   background: #FFF;
 }
 
 #contenido #secundario {
   width: 100%;
+  grid-row: 1;
+  grid-column: 1;
 }
 
 #pie {
