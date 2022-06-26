@@ -6,10 +6,15 @@ body {
 }
 
 a {
+  text-decoration: none;
   color:#192666;
 }
 a:hover {
   color:#4F6AD7;
+}
+
+li {
+  list-style: none;
 }
 
 p {
@@ -40,11 +45,6 @@ h3 {
   font-weight:bold;
 }
 
-ul, ol {
-  margin: 1em 0 1em 2em;
-  padding:0;
-}
-
 .active {
   font-weight: 900;
 }
@@ -62,6 +62,7 @@ ul, ol {
 
 #contenido {
   width: 100%;
+  margin: 90px 0;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: .4fr 1fr;
@@ -82,12 +83,11 @@ ul, ol {
 }
 
 #pie {
-  clear: both;
-  height: 60px;
-  margin-bottom: 50px;
-  background: url("../imagenes/fondo_pie.jpg") no-repeat;
-  color: #6685CC;
-  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  background-color: #262626;
+  color: white;
 }
 
 /* ---- Cabecera ----------------------------------------------------------- */
@@ -156,9 +156,6 @@ ul, ol {
   margin: 4px 5px 0 0;
 }
 
-#contenido #secundario #sobremi p {
-}
-
 #contenido #secundario div {
   padding: 0 10px;
 }
@@ -193,10 +190,17 @@ ul, ol {
 }
 
 /* ---- Pie ---------------------------------------------------------------- */
-#pie p {
+
+#pie ul {
   margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 10px;
-  left: 40px;
+}
+
+#pie ul h5 {
+  font-weight: 900;
+}
+
+#pie .pie__grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
