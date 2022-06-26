@@ -7,10 +7,7 @@ body {
 
 a {
   text-decoration: none;
-  color:#192666;
-}
-a:hover {
-  color:#4F6AD7;
+  color: inherit;
 }
 
 li {
@@ -129,23 +126,29 @@ h3 {
 }
 
 #contenido .info {
-  margin: 10px 0;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #DEE5FD;
+  margin: 15px 0;
   color:#6685CC;
 }
 
-#contenido .info a { color:#6685CC; }
-#contenido .info a:hover { color:#FF9000; }
-
-#contenido .info span.fecha, #contenido .info span.categoria, #contenido .info span.autor, #contenido .info span.comentarios {
-  padding-left:15px;
+#contenido .info {
+  display: flex;
+  padding: 0;
 }
 
-#contenido .info span.fecha { background: url("../imagenes/icono_fecha.gif") 0 50% no-repeat; }
-#contenido .info span.categoria { background: url("../imagenes/icono_categoria.gif") 0 50% no-repeat; margin-left: 8px; }
-#contenido .info span.autor { background: url("../imagenes/icono_autor.gif") 0 50% no-repeat; margin-left: 8px; }
-#contenido .info span.comentarios { background: url("../imagenes/icono_comentarios.gif") 0 50% no-repeat; margin-left: 8px; }
+#contenido .info li {
+  color:#BFAE9F;
+}
+
+#contenido .info li:not(:first-of-type) {
+  padding-left: 25px;
+}
+
+#contenido .info a { 
+  color:#BFAE9F;
+  transition: ease 0.3s;
+}
+
+#contenido .info a:hover { color:rgb(158, 110, 47); }
 
 #contenido #secundario #sobremi img {
   float: left;
