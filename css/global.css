@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-	font-size: 5vw;
+	font-size: calc(5vw / 1em);
   font-weight: 700 !important;
 }
 
