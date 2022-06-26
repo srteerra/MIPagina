@@ -1,7 +1,10 @@
 .active {
   font-weight: 900;
 }
-
+.active-option {
+  font-weight: 900;
+  margin-left: 20px;
+}
 #logo {
   width: 80px;
   max-width: 200px;
@@ -107,13 +110,18 @@
 
 #archivoSelect {
   width: 100%;
+  margin: 0 0 80px 0;
+  outline: none;
   padding: 10px 20px;
   background-color: white;
   border: none;
   border-radius: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.2);
   -webkit-appearance: none;
   -moz-appearance: none;
+  color: #BFAE9F;
+  font-weight: 900;
+  text-align: center;
 }
 
 .card__title {
@@ -130,6 +138,11 @@
   padding: 0 20px;
   margin-bottom: 50px;
 }
+
+.category-card{
+  padding: 50px 20px;
+}
+
 .card h4{
   position: absolute;
   top: -20px;
@@ -148,6 +161,30 @@
   justify-content: space-between;
 }
 
+.category-card-inner{
+  align-items: center;
+}
+
+.view-more{
+  align-items: center;
+  text-align: center;
+  color: #BFAE9F;
+  margin-top:30px;
+}
+
+.view-more p{
+  margin: 0;
+}
+
+.view-more p:hover{
+  cursor: pointer;
+  color: #262626;
+}
+
+.view-more img{
+  width: 20px;
+}
+
 .card-inner img{
   width: 100px;
   height: 100px;
@@ -162,6 +199,16 @@
   border-bottom: 1px solid black;
   width: 100%;
   display: inline-block;
+  margin-bottom: 5px;
+}
+
+.card-inner-list p:hover{
+  cursor: pointer;
+  color: #BFAE9F;
+}
+
+.card-inner-list img{
+  width: 20px;
 }
 
 .profile_button{

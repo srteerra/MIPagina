@@ -38,4 +38,17 @@
 	.card h4{
 		display: none;
 	}
+
+	#category-title{
+		display: block;
+		padding: 0;
+		color: black;
+		background-color: #FFF;
+		align-self: initial;
+		font-weight: bold;
+	}
+
+	#archivo{
+		display: none;
+	}
 }
