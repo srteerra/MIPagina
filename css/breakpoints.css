@@ -18,4 +18,37 @@
 		grid-row: 1;
 		grid-column: 1;
 	}
+
+	.card{
+		border: none;
+		box-shadow: none;
+	}
+
+	.card-inner{
+		justify-content: initial;
+	}
+
+	.card-inner div{
+		margin: 20px;
+	}
+	.card-inner img{
+		margin: 20px;
+	}
+
+	.card h4{
+		display: none;
+	}
+
+	#category-title{
+		display: block;
+		padding: 0;
+		color: black;
+		background-color: #FFF;
+		align-self: initial;
+		font-weight: bold;
+	}
+
+	#archivo{
+		display: none;
+	}
 }
