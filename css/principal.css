@@ -120,6 +120,63 @@
   font-weight: 900;
 }
 
+
+/* card */
+
+.card{
+  position: relative;
+  border-radius: 20px;
+  box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+.card h4{
+  position: absolute;
+  top: -20px;
+  align-self: center;
+  color: #FFF;
+  background-color: #585859;
+  border-radius: 20px;
+  padding: 5px 50px;
+  font-weight: lighter;
+  display:block;
+}
+.card-inner{
+  display: flex;
+  align-items: center;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.card-inner img{
+  width: 100px;
+  height: 100px;
+}
+
+.card-inner-info p{
+  margin: 0;
+}
+
+.card-inner-list p{
+  margin: 0;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: inline-block;
+}
+
+.profile_button{
+  background-color: #BFAE9F;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin: 5px auto;
+  color: #FFF;
+}
+
+.profile_button:hover{
+  cursor: pointer;
+}
 /* ---- Pie ---------------------------------------------------------------- */
 
 #pie ul {
