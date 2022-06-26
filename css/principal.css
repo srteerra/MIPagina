@@ -49,6 +49,12 @@ h3 {
   font-weight: 900;
 }
 
+#logo {
+  width: 80px;
+  max-width: 200px;
+  margin-right: 30px;
+}
+
 /* ---- Layout ------------------------------------------------------------- */
 
 #cabecera {
@@ -91,9 +97,6 @@ h3 {
 }
 
 /* ---- Cabecera ----------------------------------------------------------- */
-#cabecera #logo {
-  color: white;
-}
 
 #cabecera .buscador input {
   padding: 3px 25px;
@@ -113,7 +116,7 @@ h3 {
 }
 
 #menu ul li a:not(:first-of-type) {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 /* ---- Contenidos --------------------------------------------------------- */
